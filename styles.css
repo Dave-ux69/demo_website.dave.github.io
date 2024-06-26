@@ -1,0 +1,252 @@
+body {
+    background-color: #242526;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    background-color: white ;
+    text-align:center;
+}
+
+.header i {
+    margin: 0 50px;
+    color: #9d0606;
+}
+
+.w3-bar {
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.w3-bar .left {
+    display: flex;
+    align-items: center;
+}
+
+.w3-bar .center {
+    display: block;
+    
+    
+    flex-grow: 1;
+    flex-wrap:wrap;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.w3-bar .w3-dropdown-hover:hover .w3-dropdown-content {
+    display: block;
+}
+
+.w3-dropdown-hover .w3-button {
+    padding: 16px;
+}
+
+.w3-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+
+.w3-dropdown-content .w3-bar-item {
+    padding: 12px 16px;
+}
+
+.w3-dropdown-content .w3-bar-item:hover {
+    background-color: #555;
+    color: white;
+}
+
+.w3-bar-item-spacing .w3-bar-item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .w3-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .w3-bar .center {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .w3-bar .w3-button, .w3-bar .w3-bar-item {
+        padding: 10px 15px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+  .image {
+    position: relative; 
+    top: 80px; 
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #242526; 
+}
+
+.row {
+    justify-content: center;
+}
+
+.section_title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: bold;
+  }
+
+.section_overline {
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin-top:  15%;
+    font-size: 16px;
+  }
+
+.product-card {
+    background-color: rgb(229, 234, 234);  
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 4%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 18px;
+    margin: 20px 0;
+    color: rgb(12, 23, 23);
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-specs li {
+    margin-bottom: 5px;
+}
+
+.product {
+    color: rgb(24, 27, 27);
+    margin-bottom: 16px;
+    padding: 0;
+    text-align: center  ;
+    margin: 0.1px;
+}
+
+.learn-more-button {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid green;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.learn-more-button:hover {
+    background-color: lightgreen;
+    
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup.active {
+    display: block;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #838282;
+    padding-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
